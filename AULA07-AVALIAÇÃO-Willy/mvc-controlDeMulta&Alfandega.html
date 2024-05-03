@@ -1,0 +1,59 @@
+<!--Aqui vai ter uma imagem pelo CSS-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="real.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>MVC-Controle de Multa</title>
+</head>
+
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                <!-- Aqui vai ter uma imagem pelo CSS // 
+                Criar uma pagina com sistema ou controle de Multa//
+                Controle de Alfandega = BRASIL não é Estrangeiro// -->
+            </div>
+            <section id="formulario">
+                <h1>CET - Controle de Multa</h1>
+                <p>Bem-vindo novamente, Digite a velocidade do veiculo e sua PLACA.
+                </p>
+                <p>velocidade do Veiculo:<input type="number" name="txtvel" id="txtvel"> Km/h</p>
+                <p>placa do veiculo:<input type="text" name="placa " id="placa"> (ABC1265)</p>
+
+                <input type="button" value="Verificar" onclick="calcular()">
+                
+                <div id="resp"> </div>
+
+                <script>
+                    function calcular() {
+                        var txtvel = window.document.querySelector('input#txtvel')
+                        var vel = Number(txtvel.value)
+                        var resp = window.document.querySelector('div#resp')
+                        var text = (placa.value)
+                        //os codigos acima conectam a resposta da div resp a a variavel if  e calculam o valor  
+                        if (vel > 60) {
+                            resp.innerHTML += `<p>ta achando que e mario cart? ${vel},sua placa ${text} Km/h</P>`
+                        } else {
+                            resp.innerHTML += `<p>salve  meu bom , pode seguir em frente que você ta ssussa, SIIIIIIUUUU!!!!  ${vel} sua placa ${text} Km/h</p>`
+                            
+                        } 
+                        
+
+
+
+                    }
+                </script>
+
+            </section>
+    </main>
+
+
+</body>
+
+</html>

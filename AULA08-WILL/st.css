@@ -1,0 +1,58 @@
+@media screen and (min-width:768px) and (max-width:992px) {
+    
+
+
+body{
+    background-image: linear-gradient(to top,#593493,#844ca3,#ff7f00) ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1{
+    margin-top:8%;
+    margin-left:45%;
+}
+}
+
+@media screen and (min-width:992px) {
+
+
+    body{
+        background-image: linear-gradient(to top,#ff7f00,#844ca3,#593493);
+        background-repeat: no-repeat;
+        height: 100vh;
+        width:100vw;
+    }
+
+    h1{
+        margin-top:8%;
+        margin-left:45%;
+    }
+
+    section#form{
+        background-color:aliceblue;
+        position:absolute;
+        top: 30%;
+        left:30%;
+        width:700px;
+        height: 500px;
+
+
+   
+     
+    }
+
+
+}
+
+@media screen and (min-width:250px) and (max-width:768px) {
+
+    body{
+        background-image:linear-gradient(to top,#844ca3,#593493,#ff7f00);
+        background-repeat:no-repeat;
+        height: 100vh;
+        width: 100vw;
+    }
+}
+

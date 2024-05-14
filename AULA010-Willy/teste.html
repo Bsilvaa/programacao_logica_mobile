@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem"></div>
+            <section id="formulario">
+                <h1>CR7 FÃS</h1>
+                <p>Nome</p><input type="text" name="nm" id="nm">
+                <p>idade</p><input type="number" name="idade" id="idade">
+                <p>tempo como fã</p><input type="number" name="cr7" id="cr7">
+                <input type="button" value="verificar" onclick="calcular()">
+                <div id="resp"></div>
+            </section>
+        </section>
+    </main>
+    <script>
+        function calcular() {
+            var cr7 = parseFloat(document.querySelector('input#cr7').value);
+            var nome = document.querySelector('input#nm').value;
+            var idade = document.querySelector('input#idade').value;
+            var resp = document.querySelector('div#resp');
+
+            if (cr7 > 5) {
+                resp.innerHTML += `<p>SIIIIUUUUUUU!! ${nome}, VOCÊ TEM ${idade} ANOS E É UM FÃ RAIIIIZ!!! ${cr7}</p>`;
+            } else {
+                resp.innerHTML += `<p>Olá ${nome}, você tem ${idade} anos, você não é raiz mas é bem-vindo :) ${cr7}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>

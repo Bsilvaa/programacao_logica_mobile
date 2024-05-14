@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>cr7</title>
+</head>
+ 
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem"></div>
+            <section id="formulario">
+                <p>Nome</p><input type="text" name="nm" id="nm">
+                <p>idade</p><input type="number" name="idade" id="idade">
+                <P>tempo como fã</P><input type="number" name="cr7" id="cr7">
+
+                
+                <input type="button" value="verificar" onclick="calcular()">
+
+                <div id="resp"></div>
+            </section>
+        </section>
+     </main>
+                <script>
+                    function calcular() {
+                        var nom = window.document.querySelector('input#nm')
+                        var idad = window.document.querySelector('input#idade')
+                        var cr7 = window.document.querySelector('input#cr7')
+                        var result = number(cr7.value)
+                        var resp = window.document.querySelector('div#resp')
+
+                        if (cr7 > 6) {
+                            resp.innerHTML += `<p> olá ${nom} SIIIUUU!! você tem ${idad} anos e é fã raiz á ${cr7} !!</p> ` 
+                        } else {
+                            resp.innerHTML += `<p> ai não ${nom} como assim só ${cr7} ? mas tudo suave, você tem ${idad} anos.</p>`
+                        }
+  
+                    }
+                </script>
+
+
+                
+
+                
+
+
+            
+
+
+   
+</body>
+</html>
